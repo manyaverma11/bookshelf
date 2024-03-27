@@ -116,7 +116,7 @@ main{
   margin: 0;
   padding: 0;
   margin-top: 8.3%;
-  background-color: rgb(116, 19, 19);
+  background-color: rgb(221, 219, 218);
   display: grid;
   grid-template-columns: 1fr 4.65fr;
   width: 100vw;
@@ -136,7 +136,7 @@ div .leftSideBar{
   grid-template-rows: 3% 3% 3%;
 }
  .filters{
-  background-color: rgb(52, 53, 53);
+  background-color: rgb(221, 219, 218);
   cursor: pointer;
 
 }
@@ -150,7 +150,7 @@ div .leftSideBar{
 }
 
 .field {
-  background-color: rgb(143, 125, 104);
+  background-color: rgb(221, 219, 218);
   width: 100%;
   display: grid;
   gap: 1rem;
@@ -180,14 +180,14 @@ div .leftSideBar{
   margin-top: 5%;
   grid-row: 1;
   text-align: center;
-  background-color: yellow;
+  background-color: #fff;
   width: fit-content;
   margin-left: 5%;
 }
 .products h3 {
   grid-row: 2;
   text-align: center;
-  background-color: rgb(184, 126, 176);
+  background-color: #fff;
   width: fit-content;
   margin-left: 5%;
   margin-top: 1%;
@@ -195,14 +195,14 @@ div .leftSideBar{
 .products h4 {
   grid-row: 3;
   text-align: center;
-  background-color: rgb(184, 126, 176);
+  background-color: #fff;
   width: fit-content;
   margin-left: 5%;
   margin-top: 1%;
 }
  .cartButton{
-  background-color: rgb(0, 0, 0);
-  color: rgb(206, 39, 39);
+  background-color: #3a3a3a;
+  color: #fff;
   padding: 1rem;
   border: none;
   height: 20%;
