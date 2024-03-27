@@ -12,23 +12,24 @@ function App() {
   const showMenu = () => {
     setToggle(!toggle)
     if(toggle === true) {
-      setWidth('16%')
+      setWidth('16%');
     }else {
-      setWidth('0px')
+      setWidth('0%')
     }
   }
   
 const Products = (props) => {
-  const { img, title, price } = props.products
+  const { img, title, author, price } = props.products
 
   return (
     <article className="products">
       <img src={img} alt={title} />
       <div className='desc'>
-      <h2>{title}</h2>
+      <h1>{title}</h1>
+      <h3>{author}</h3>
       <h4>{price} </h4>
-      </div>
       <button className="cartButton" onClick={() => setCount(count + 1)}>Add to Cart</button>
+      </div>
     </article>
   )
 }
@@ -37,25 +38,30 @@ const products = [
   {
     img: './images/image-1.jpg',
     title: 'Interesting Facts For Curious Minds',
+    author: 'By Jordan Moore',
     price: '$12.99'
   },
   {
     img: './images/image-1.jpg',
     title: 'Interesting Facts For Curious Minds',
+    author: 'By Jordan Moore',
     price: '$12.99'
   },
   {
     img: './images/image-1.jpg',
+    author: 'By Jordan Moore',
     title: 'Interesting Facts For Curious Minds',
     price: '$12.99'
   },
   {
     img: './images/image-1.jpg',
+    author: 'By Jordan Moore',
     title: 'Interesting Facts For Curious Minds',
     price: '$12.99'
   },
   {
     img: './images/image-1.jpg',
+    author: 'By Jordan Moore',
     title: 'Interesting Facts For Curious Minds',
     price: '$12.99'
   }
@@ -75,7 +81,7 @@ const products = [
         </button>
         </div>
         <div className="profile">
-          <div className="profileName">ProfileNAme</div>
+          <div className="profileName">Profile Name</div>
           <button className="myCart" onClick={showMenu}>My Cart ({count})</button>
         </div>
       </div>
