@@ -5,13 +5,14 @@ import './App.css'
 
 function App() {
 
+  const [cartItems, setCartItems] = useState([]);
   const [count, setCount] = useState(0);
   const [toggle, setToggle]= useState(false)
   const [width, setWidth]= useState('')
 
   const showMenu = () => {
     setToggle(!toggle)
-    if(toggle === true) {
+    if(toggle === false) {
       setWidth('16%');
     }else {
       setWidth('0%')
@@ -26,8 +27,8 @@ const Products = (props) => {
       <img src={img} alt={title} />
       <div className='desc'>
       <h1>{title}</h1>
-      <h3>{author}</h3>
-      <h4>{price} </h4>
+      <h3>By {author}</h3>
+      <h4>${price} </h4>
       <button className="cartButton" onClick={() => setCount(count + 1)}>Add to Cart</button>
       </div>
     </article>
@@ -36,34 +37,39 @@ const Products = (props) => {
 
 const products = [
   {
+    id: 1,
     img: './images/image-1.jpg',
     title: 'Interesting Facts For Curious Minds',
-    author: 'By Jordan Moore',
-    price: '$12.99'
+    author: 'Jordan Moore',
+    price: '12.99'
   },
   {
-    img: './images/image-1.jpg',
-    title: 'Interesting Facts For Curious Minds',
-    author: 'By Jordan Moore',
-    price: '$12.99'
+    id: 2,
+    img: './images/image-2.jpg',
+    title: 'The Woman in the Woods (Costa Family Book 8)',
+    author: 'Jessica Gadziala',
+    price: '18.77'
   },
   {
-    img: './images/image-1.jpg',
-    author: 'By Jordan Moore',
-    title: 'Interesting Facts For Curious Minds',
-    price: '$12.99'
+    id: 3,
+    img: './images/image-3.jpg',
+    author: 'Rebecca Yarros',
+    title: 'Fourth Wing (The Empyrean, 1)',
+    price: '13.39'
   },
   {
-    img: './images/image-1.jpg',
-    author: 'By Jordan Moore',
-    title: 'Interesting Facts For Curious Minds',
-    price: '$12.99'
+    id: 4,
+    img: './images/image-4.jpg',
+    author: 'Jesse Watters',
+    title: 'Get It Together: Troubling Tales from the Liberal Fringe',
+    price: '18.98'
   },
   {
-    img: './images/image-1.jpg',
-    author: 'By Jordan Moore',
-    title: 'Interesting Facts For Curious Minds',
-    price: '$12.99'
+    id: 5,
+    img: './images/image-5.jpg',
+    author: 'William Powell',
+    title: 'The Anarchist Cookbook',
+    price: '20.04'
   }
   
 ]
