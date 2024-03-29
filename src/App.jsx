@@ -27,7 +27,7 @@ const Products = (props) => {
       <img src={img} alt={title} />
       <div className='desc'>
       <h1>{title}</h1>
-      <h3>By {author}</h3>
+      <h4>By {author}</h4>
       <h4>${price} </h4>
       <button className="cartButton" onClick={() => setCount(count + 1)}>Add to Cart</button>
       </div>
@@ -53,22 +53,22 @@ const products = [
   {
     id: 3,
     img: './images/image-3.jpg',
-    author: 'Rebecca Yarros',
     title: 'Fourth Wing (The Empyrean, 1)',
+    author: 'Rebecca Yarros',
     price: '13.39'
   },
   {
     id: 4,
     img: './images/image-4.jpg',
-    author: 'Jesse Watters',
     title: 'Get It Together: Troubling Tales from the Liberal Fringe',
+    author: 'Jesse Watters',
     price: '18.98'
   },
   {
     id: 5,
     img: './images/image-5.jpg',
-    author: 'William Powell',
     title: 'The Anarchist Cookbook',
+    author: 'William Powell',
     price: '20.04'
   }
   
@@ -94,8 +94,8 @@ const products = [
       <main>
         <div className="leftSideBar">
           <button className='filters'>Filters</button>
-          <button className='brand'>Brand</button>
-          <button className='items'>Items</button>
+          <button className='genre'>Genre</button>
+          <button className='publications'>Publications</button>
         </div>
         <div className="field">
             {products.map((products) => {
@@ -118,7 +118,9 @@ const products = [
       </div>
       <div className='footer'>
         <div className='contact'>contact</div>
-        <p className='copyright'>Coded by Manya Verma | Copyrights ©2024.</p>
+        <p className='copyright'>
+          <a href='https://manyaverma11.github.io/Portfolio/'>Coded by Manya Verma | Copyrights ©2024.</a>
+        </p>
       </div>
     </section>
   )

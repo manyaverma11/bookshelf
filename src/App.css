@@ -47,7 +47,7 @@ div .logo{
   text-align: left;
   padding: 1rem;
   font-family:  "Work Sans", sans-serif;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 div .search{
@@ -90,6 +90,11 @@ div #searchInput{
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
+.searchBarIcon:hover{
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
 #searchBarIconPhoto{
   width: 50%;
   height: 50%;
@@ -121,7 +126,7 @@ div .profileName{
 div .profileName:hover{
   opacity: 0.5;
   cursor: pointer;
-
+  transition: 0.3s;
 }
 
 .myCart{
@@ -130,16 +135,18 @@ div .profileName:hover{
   color: #343029;
   display: grid;
   grid-column: 2;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
   border: none;
   height: 90%;
   text-align: center;
   align-items: center;
-  margin: 0 10% 0 7% ;
+  margin: 0 15% 0 7% ;
+  border-radius: 5px;
 }
 
 .myCart:hover{
-  opacity: 0.8;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 main{
@@ -178,25 +185,25 @@ div .leftSideBar{
   opacity: 0.9;
 }
 
- .brand{
+ .genre{
   background-color: #f2ecec;
   cursor: pointer;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.brand:hover{
+.genre:hover{
   opacity: 0.9;
 }
 
- .items{
+ .publications{
   background-color: #f2ecec;
   cursor: pointer;
   border: none;
   box-shadow: 0 4px 1000px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.items:hover{
+.publications:hover{
   opacity: 0.9;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -207,12 +214,12 @@ div .leftSideBar{
   display: grid;
   gap: 1rem;
   grid-column: 2;
-  margin-bottom: 2%;
+  margin: 1.5% 0 2% 0%;
 }
 
 .products {
   background: #fff;
-  margin: 2% 3.6% 0% 2%;
+  margin: 0% 3.6% 0% 2%;
   padding: 2rem;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -220,8 +227,8 @@ div .leftSideBar{
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 .products img {
-  max-width: 200px;
-  max-height: 300px;
+  max-width: 150px;
+  max-height: 250px;
   grid-column: 1;
 }
 
@@ -232,7 +239,7 @@ div .leftSideBar{
 }
 
 .products h1 {
-  margin-top: 7%;
+  margin-top: 4%;
   grid-row: 1;
   text-align: center;
   background-color: #fff;
@@ -265,11 +272,18 @@ div .leftSideBar{
   cursor: pointer;
   grid-row: 4;
   display:flex;
+  text-align: center;
+  align-items: center;
   justify-content: center;
   width: fit-content;
   margin-left: 5%;
-  margin-top: 8%;
+  margin-top: 5%;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.cartButton:hover{
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
 div .rightSideBar{
@@ -331,6 +345,12 @@ div .loadMore{
   justify-content: center;
 }
 
+.loadMoreButton:hover{
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .loadMoreButton{
   margin-left: 15%;
   color: #fff;
@@ -348,16 +368,40 @@ div .footer{
   height: 80px;
   background-color: #e5c0bb;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
   overflow: hidden;
   margin-top: 2%;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  padding-left: 20%;
+}
+
+.contact{
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-row: 1;
 }
 
 .copyright{
-  
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-row: 2;
+  font-size: medium;
+  font-weight: 900;
 }
+
+.copyright a{
+  text-decoration: none;
+}
+
+.copyright a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
 
 @media screen and (min-width: 768px) {
   .field {
