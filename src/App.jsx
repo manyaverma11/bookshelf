@@ -113,6 +113,13 @@ const products = [
           </div>
         </div>
       </main>
+      <div className='loadMore'>
+        <button className='loadMoreButton'>Load more</button>
+      </div>
+      <div className='footer'>
+        <div className='contact'>contact</div>
+        <p className='copyright'>Coded by Manya Verma | Copyrights ©2024.</p>
+      </div>
     </section>
   )
 }
