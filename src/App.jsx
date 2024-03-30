@@ -106,8 +106,8 @@ const products = [
         </div>
         <div className="rightSideBar" style={{width}}>
           <div className='cartTop'>
+            <div className="cartSymbol"><ion-icon name="cart-outline" size="large" color='#3a3a3a'></ion-icon></div>
             <div className='cartHeading'>Cart</div>
-            <ion-icon name="cart-outline" className='cartSymbol'></ion-icon>
             <div  className='cartCount'>({count})</div>
           </div>
         </div>
@@ -120,12 +120,13 @@ const products = [
           <div className='contactHeading'>Contact</div>
           <div className='socialIcons'>
             <a href="https://github.com/manyaverma11">
-            <ion-icon name="logo-github" size="large" className='git' style={{margin: '0 0 0 0'}}></ion-icon>
+            <ion-icon name="logo-github" size="large" className='git' style={{color: "#fff",margin:'0 16px 0 0'}}></ion-icon>
             </a>
-            <a href="https://www.linkedin.com/in/manyaverma11/"><ion-icon name="logo-linkedin" size="large" className='linkedin'></ion-icon>
+            <a href="https://www.linkedin.com/in/manyaverma11/">
+              <ion-icon name="logo-linkedin" size="large" className='linkedin' style={{color: "#fff",margin:'0 16px 0 0'}}></ion-icon>
             </a>
             <a href="mailto:manyaverma0154@gmail.com">
-            <ion-icon name="mail-outline" size="large" className='mail'></ion-icon>
+            <ion-icon name="mail-outline" size="large" className='mail' style={{color: "#fff"}}></ion-icon>
             </a>
           </div>
         </div>

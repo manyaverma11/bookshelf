@@ -172,7 +172,7 @@ div .leftSideBar{
   width: 18%;
   grid-template-rows: 7% 7% 7%;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  margin-top: 0.1%;
+  margin-top: 0.08%;
 }
  .filters{
   background-color: #f2ecec;
@@ -302,7 +302,12 @@ z-index: 999 !important;
   margin-left: 7%;
   margin-top: 7%;
   display: grid;
-  grid-template-columns: 1fr 5fr 10fr;
+  grid-template-columns: 15% 30% 10%;
+}
+
+.cartSymbol{
+  display: grid;
+  grid-column: 1;
 }
 
 .cartHeading{
@@ -310,30 +315,19 @@ z-index: 999 !important;
   font-family:  "Work Sans", sans-serif;
   color: #343029;
   background-color: #f2ecec;
-  height: fit-content;
-  width: fit-content;
   font-size: x-large;
-  grid-column: 1;
-  margin-top: 5%;
-}
-.cartSymbol{
-  display: grid;
-  background-color:#f2ecec;
-  width: 90%;
-  height: 4.7%;
   grid-column: 2;
+  margin: 5% 0 0 5%;
 }
 .cartCount{
+  margin: 5% 0 0 5%;
   display: grid;
-  margin-top: 9.5%;
-  margin-left: 2%;
   font-family:  "Work Sans", sans-serif;
   display: grid;
   color: #343029;
   grid-column: 3;
-  width: fit-content;
-  height: fit-content;
   background-color: #f2ecec;
+  font-size: medium;
 }
 
 div .loadMore{
@@ -365,46 +359,56 @@ div .loadMore{
 
 div .footer{
   grid-row: 4;
-  height: 600%;
-  background-color: #e5c0bb;
+  height: 400%;
+  background-color: #3a3a3a;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: hidden;
   margin-top: 2%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
   width: 100%;
   z-index: 99 !important;
 }
 
 .contact{
-  width: fit-content;
-  height: fit-content;
   display: grid;
   grid-row: 1;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 38% 50%;
+  color: #fff;
+  width: fit-content;
+  margin-left: 7%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .contactHeading{
   grid-row: 1;
   display: grid;
-  font-size: x-large;
-  font-weight: bolder;
+  margin: 1% 0 0 0%;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 130%;
+  font-weight:lighter;
 }
 
 .socialIcons{
   grid-row: 2;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.git{
-  display: grid;
-  grid-column: 1;
+  margin: 0.8% 0 0 0%;
+  grid-template-columns: auto auto auto;
 }
 
 .socialIcons a:hover{
   opacity: 0.8;
   transition: 0.3s;
+}
+
+.git{
+  display: grid;
+  grid-column: 1;
 }
 
 .linkedin{
@@ -418,22 +422,26 @@ div .footer{
 }
 
 .copyright{
-  width: fit-content;
-  height: fit-content;
   display: grid;
   grid-row: 2;
   font-size: medium;
-  font-weight: 900;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  align-items: center;
+  background-color: #6a6c6d;
 }
 
 .copyright a{
   text-decoration: none;
+  color: #fff;
 }
 
 .copyright a:hover{
   text-decoration: none;
-  opacity: 0.8;
-  transition: 0.5s;
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 
