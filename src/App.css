@@ -296,13 +296,17 @@ display: grid;
 transition: 0.3s;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 z-index: 999 !important;
+grid-template-rows: auto auto;
 }
 
 .cartTop{
+  display: grid;
+  grid-row: 1;
   margin-left: 7%;
   margin-top: 7%;
   display: grid;
   grid-template-columns: 15% 30% 10%;
+  height: fit-content;
 }
 
 .cartSymbol{
@@ -317,7 +321,7 @@ z-index: 999 !important;
   background-color: #f2ecec;
   font-size: x-large;
   grid-column: 2;
-  margin: 5% 0 0 5%;
+  margin:5% 0 0 5%;
 }
 .cartCount{
   margin: 5% 0 0 5%;
@@ -328,6 +332,7 @@ z-index: 999 !important;
   grid-column: 3;
   background-color: #f2ecec;
   font-size: medium;
+  align-items: center;
 }
 
 div .loadMore{
