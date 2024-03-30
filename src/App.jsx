@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { FaBeer } from "react-icons/fa";
 import './App.css'
 
 function App() {
@@ -83,7 +82,7 @@ const products = [
           <input type="text" name="searchingArea" id="searchInput" placeholder="Search any book" />
         </div>
         <button className="searchBarIcon">
-          <img id="searchBarIconPhoto" src="\images\searchGlass.png"></img>
+          <ion-icon name="search-outline" id="searchBarIconPhoto"></ion-icon>
         </button>
         </div>
         <div className="profile">
@@ -108,7 +107,7 @@ const products = [
         <div className="rightSideBar" style={{width}}>
           <div className='cartTop'>
             <div className='cartHeading'>Cart</div>
-            <img src="\images\cart_symbol.png" className='cartSymbol'></img>
+            <ion-icon name="cart-outline" className='cartSymbol'></ion-icon>
             <div  className='cartCount'>({count})</div>
           </div>
         </div>
@@ -117,7 +116,19 @@ const products = [
         <button className='loadMoreButton'>Load more</button>
       </div>
       <div className='footer'>
-        <div className='contact'>contact</div>
+        <div className='contact'>
+          <div className='contactHeading'>Contact</div>
+          <div className='socialIcons'>
+            <a href="https://github.com/manyaverma11">
+            <ion-icon name="logo-github" size="large" className='git' style={{margin: '0 0 0 0'}}></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/manyaverma11/"><ion-icon name="logo-linkedin" size="large" className='linkedin'></ion-icon>
+            </a>
+            <a href="mailto:manyaverma0154@gmail.com">
+            <ion-icon name="mail-outline" size="large" className='mail'></ion-icon>
+            </a>
+          </div>
+        </div>
         <p className='copyright'>
           <a href='https://manyaverma11.github.io/Portfolio/'>Coded by Manya Verma | Copyrights ©2024.</a>
         </p>
