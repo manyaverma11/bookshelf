@@ -213,21 +213,22 @@ div .leftSideBar{
   gap: 1rem;
   grid-column: 2;
   margin: 1.5% 0% 2% 2.5%;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .products {
   background: #fff;
-  margin: 0% 1% 0% 1%;
-  padding: 2rem 2rem 0rem 2rem;
+  margin: 0% 0% 0% 0%;
+  padding: 0.8rem 2rem 0rem 2rem;
   display: grid;
   grid-template-columns: auto 1fr;
   border-radius: 10px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-
+  max-height: 260px;
 }
 .products img {
-  object-fit: cover;
+  max-width: 150px;
+  height: 200px;
   grid-column: 1;
 }
 
@@ -235,15 +236,18 @@ div .leftSideBar{
   grid-column: 2;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+
 }
 
-.products h3 {
-  margin-top: 4%;
+.products p {
+  padding-top: 5%;
   grid-row: 1;
   text-align: left;
   background-color: #fff;
   width: fit-content;
   padding-left: 10%;
+  font-size: 21px;
+  font-weight: 600;
 }
 .products h3 {
   grid-row: 2;
@@ -252,13 +256,15 @@ div .leftSideBar{
   width: fit-content;
   margin-top: 1%;
   padding-left: 10%;
+  font-size: 18px;
+  font-weight: 200;
 }
-.products h5 {
+.products h4 {
   grid-row: 2;
   text-align: left;
   background-color: #fff;
   width: fit-content;
-  margin-top: 4%;
+  margin-top: 2%;
   padding-left: 10%;
 }
  .cartButton{
@@ -276,8 +282,8 @@ div .leftSideBar{
   justify-content: center;
   width: fit-content;
   margin-left: 10%;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: 15px;
+  margin-bottom: 7px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 

@@ -38,8 +38,9 @@ function App() {
       <article className="products">
         <img src={imageLinks?.thumbnail} alt={title} />
         <div className="desc">
-          <h3>{title}</h3>
-          <h5>By {authors ? authors.join(', ') : 'Unknown Author'}</h5>
+          <p>{title}</p>
+          <h3>By {authors ? authors.join(', ') : 'Unknown Author'}</h3>
+          <h4>Price: ${Math.floor(Math.random() * 22)}</h4>
           <button className="cartButton" onClick={() => setCount(count + 1)}>
             Add to Cart
           </button>
