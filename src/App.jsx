@@ -32,7 +32,7 @@ function App() {
 
   const Products = ({ book }) => {
     const { volumeInfo } = book;
-    const { title, authors, imageLinks } = volumeInfo;
+    const { title, authors, imageLinks,pageCount} = volumeInfo;
 
     return (
       <article className="products">
@@ -40,7 +40,7 @@ function App() {
         <div className="desc">
           <p>{title}</p>
           <h3>By {authors ? authors.join(', ') : 'Unknown Author'}</h3>
-          <h4>Price: ${Math.floor(Math.random() * 22)}</h4>
+          <h4>Price: ${pageCount/10}</h4>
           <button className="cartButton" onClick={() => setCount(count + 1)}>
             Add to Cart
           </button>
