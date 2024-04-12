@@ -150,7 +150,7 @@ div .profileName:hover{
 
 main{
   margin: 0;
-  padding: 0;
+  padding-right: 4%;
   margin-top: 6.9%;
   background-color: #e5e7eb;
   display: grid;
@@ -212,53 +212,54 @@ div .leftSideBar{
   display: grid;
   gap: 1rem;
   grid-column: 2;
-  margin: 1.5% 0 2% 0%;
+  margin: 1.5% 0% 2% 2.5%;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .products {
   background: #fff;
-  margin: 0% 3.6% 0% 2%;
-  padding: 2rem;
+  margin: 0% 1% 0% 1%;
+  padding: 2rem 2rem 0rem 2rem;
   display: grid;
   grid-template-columns: auto 1fr;
   border-radius: 10px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
 }
 .products img {
-  max-width: 150px;
-  max-height: 250px;
+  object-fit: cover;
   grid-column: 1;
 }
 
 .products desc{
   grid-column: 2;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.products h1 {
+.products h3 {
   margin-top: 4%;
   grid-row: 1;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
   width: fit-content;
-  margin-left: 5%;
+  padding-left: 10%;
 }
 .products h3 {
   grid-row: 2;
-  text-align: center;
+  text-align: left;
   background-color: #fff;
   width: fit-content;
-  margin-left: 5%;
   margin-top: 1%;
+  padding-left: 10%;
 }
-.products h4 {
-  grid-row: 3;
-  text-align: center;
+.products h5 {
+  grid-row: 2;
+  text-align: left;
   background-color: #fff;
   width: fit-content;
-  margin-left: 5%;
-  margin-top: 1%;
+  margin-top: 4%;
+  padding-left: 10%;
 }
  .cartButton{
   background-color: #3a3a3a;
@@ -268,14 +269,15 @@ div .leftSideBar{
   border: none;
   height: 15%;
   cursor: pointer;
-  grid-row: 4;
+  grid-row: 3;
   display:flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  margin-left: 5%;
-  margin-top: 5%;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 5%;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
