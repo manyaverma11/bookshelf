@@ -106,7 +106,7 @@ function App() {
           </div>
         </div>
         <p className="copyright">
-          <a href="https://manyaverma11.github.io/Portfolio/">Coded by Manya Verma | Copyrights ©2024.</a>
+          <a href="https://manyaverma11.github.io/Portfolio/">Built by Manya Verma | Copyrights ©2024.</a>
         </p>
       </div>
     </section>
